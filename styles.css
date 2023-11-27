@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap');
+
+body {
+    font-family: 'DM Serif Display', serif;
+    text-align: center;
+    display: flex;
+    /* padding: 0 10px; */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(bg.jpg);
+
+}
+
+.wrapper{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    height: 330px;
+    /* background: #fff; */
+    max-width: 410px; 
+    border-radius: 7px;
+    padding: 16px 25px 0;
+    transition: height 0.2s ease;
+}
+
+.wrapper.active{
+    height: 480px;
+}
+#stopwatch {
+    font-size: 2em;
+    margin: 20px 0;
+}
+#controls {
+    margin-bottom: 20px;
+    font-family: 'DM Serif Display', serif;
+}
+button {
+    font-size: 1em;
+    margin: 0 5px;
+    padding: 8px 16px;
+}
+#lapTimes {
+    text-align: left;
+    max-height: 150px;
+    overflow-y: auto;
+}
